@@ -34,7 +34,12 @@ cacheSolve <- function(x, ...) {
   m
 }
 
+# Test to validate the functions above with the following codes.
 m <- matrix(c(1,2,2,1), ncol=2, nrow=2)
 cm <- makeCacheMatrix(m)
 print(cacheSolve(x=cm))
 
+## Expected results
+##            [,1]       [,2]
+## [1,] -0.3333333  0.6666667
+## [2,]  0.6666667 -0.3333333
